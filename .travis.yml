@@ -1,3 +1,13 @@
 language: ruby
 rvm:
-  - 2.5.1
+- 2.0.0
+- 1.9.3
+- jruby-19mode
+- rbx-2
+deploy:
+  provider: heroku
+  api_key:
+    secure: q/W1D19g/P+7NAqDBjzQ47BcVd8OQfutmfcsDwcC0DbMogP9g79Cq9Oh+I7i6bhR5RHTV/bsEUfJAa9xZrwv4ZZMhZzEfaLqSksa5j3aPkrqDCMfg2R4k2jo5ZBt9wqwAbTb7Ja/zjcPLIO3UQeqjxD95oiNWLxdb1ZiUPIdlIHBMv6Aq2tfpyh6ijaDC+5q8AzudbJApO6F649s+xeThH8fjR8P8MvvxbKtzkGGLvd6Gz5kP3bobSwQajMUNRHQ2uC3vevdATF4tq3p1lJm8QTeUaOQ1nsfm3LKgVcE0PgsEuZta1NC9/FasdbcpzyvoiunGvUeCQFNOT5bIS8iR3T3GzPU/kn3U3mEFWTbRd0eoJy1pQnw3h+aZh4ZfkujImnoZmhrR2McNUC1+35ZAAnTwpPy8/NoPN08C8uxK9r6EHcSBnDlc1nRgw/vnMvP0Jfd22TC0jABKW5i0AKp5pU8alAhE+FVrT3WvWDo+tC3vekwV5VV+vY6Mvb/O+jxxHYmUgIHyPuufJlqdmW+VjappbiQ7GGgAVz/ZLHt9hmlPtrSAirkRPR6yVDqsq0QYNy6xuVcsOYVBkBaxXuJzzmmj/na1azczeKSycT5j7vtX4zVeB3IuW9lNe79Ya84O2gXmTWAayktyNRt8KT/KZlfCGitqdNb6JxDbjtDbvU=
+  app: projetgespizza
+  on:
+    repo: bdaris/ProjetGespizza
