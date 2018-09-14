@@ -1,3 +1,10 @@
 language: ruby
 rvm:
 - 2.5.1
+deploy:
+  provider: heroku
+  api_key:
+    secure: D5RCbSF1mm9WHgaNEsTrhtDPil87RwZz9jRzl8HTrbp8P2a7kY4dSb1KoX5dZyBp4+Wo4c3two1AHR/vwASYJ7+SnDi6HrXImJyLZC1Ls4CeAZZHlayMu37gjIBqu5g1izSyl3SU8vOjFfwo0/podUeQF6Pp/9jlDBiIx2/1GKYjMpIFlIbFc8tiwcAhb59wu+dvVir08jyzqlK3e2MuEq4NkmHP6+uMnuisv7DOkPy7uS2dkV5EgOkoTyRUv46/bmRLPb8/dGjSUNOK/Z0nZtvk6sK/yLC76xc7Uywt5yHCnQWbAPCJsao4onj4I3oqGAfFdiURxhIQCx34GF0bDhpud1QOA+tu5sd88CHDY9pxF3vrJi1GXGingfM3ZdEsazx9se4IBflvtt9NKWh2v3eLIEIiYxbZYXrpYtN6066ZirmhUhRA7MzE0FzUMT2GnkRUb9Sa5F6L1iRLGf3C67ZQNde9pfD/7oGF6ZaHzuKPOQFgr24MtRqCSJcXpOChkwK2eAYpebAKhErWmkKcOmkAQ2hzhPvVy5j4o2Dzgvocgt0zFPsNh/Pq37MqAeDQjR2U94RXdzZopEv/Q9wpM6dUAiUFwC9ZxZ9DB2rGDxzMgKVo52mNtT/NEF9MlFkIl4Uq21g1JHPLHg2Kxc+W5v6+DivKTJZpr3KoUzafZxM=
+  app: stormy-bayou-64333
+  on:
+    repo: bdaris/ProjetGespizza
