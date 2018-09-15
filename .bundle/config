@@ -1,5 +1,5 @@
 ---
-BUNDLE_WITHOUT: production
+BUNDLE_WITHOUT: sqlite3
 BUNDLE_FROZEN: '1'
 BUNDLE_PATH: vendor/bundle
 BUNDLE_BIN: vendor/bundle/bin
