@@ -1,1 +1,0 @@
-DEPRECATION WARNING: Defining a route where `to` is a controller without an action is deprecated. Please change `to: 'welcome on rails ruby bdaris'` to `controller: 'welcome on rails ruby bdaris'`. (called from block in <top (required)> at /home/cabox/workspace/config/routes.rb:6)
