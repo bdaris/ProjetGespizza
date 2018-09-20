@@ -34,4 +34,3 @@ environment ENV.fetch("RAILS_ENV") { "development" }
 plugin :tmp_restart
 
 #run rails db:migrate before deploying application 
-release: rails db:migrate
