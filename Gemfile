@@ -43,6 +43,7 @@ group :development, :test do
 end
 
 gem 'pg', '~> 1.1', '>= 1.1.3', group: :production
+gem 'rails_12factor' , group: :production
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
