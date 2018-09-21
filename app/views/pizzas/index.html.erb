@@ -18,6 +18,7 @@
         <td><%= pizza.name %></td>
         <td><%= pizza.price %></td>
         <td><%= image_tag "https://www.bing.com/th?id=OIP.EGGtH-Ne07qobnfeqQVFFwHaFG&w=227&h=160&c=7&o=5&pid=1.7.png" %></td>
+        
         <td><%= link_to 'Show', pizza %></td>
         <td><%= link_to 'Edit', edit_pizza_path(pizza) %></td>
         <td><%= link_to 'Destroy', pizza, method: :delete, data: { confirm: 'Are you sure?' } %></td>
