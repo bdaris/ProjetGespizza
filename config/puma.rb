@@ -34,5 +34,5 @@ environment ENV.fetch("RAILS_ENV") { "development" }
 plugin :tmp_restart
 
 #run rails db:migrate before deploying application 
-web: bundle exec puma -C config/puma.rb
-release: bundle exec rake db:migrate
+web: bundle exec puma -C config/puma.rb;
+release: bundle exec rake db:migrate;
