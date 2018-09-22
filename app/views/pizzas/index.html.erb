@@ -17,8 +17,10 @@
       <tr>
         <td><%= pizza.name %></td>
         <td><%= pizza.price %></td>
-        <td><%= image_tag "https://www.bing.com/th?id=OIP.7XVcOF6soSTvJSOtxoDQHAHaEV&w=300&h=175&c=7&o=5&pid=1.7" %></td>
-        <td><%= image_tag "https://www.bing.com/th?id=OIP.f0WyBcM5RDWOil_DbnvAQQHaFj&w=243&h=182&c=7&o=5&pid=1.7" %></td>
+        <td> 
+          <tr> <%= image_tag "https://www.bing.com/th?id=OIP.7XVcOF6soSTvJSOtxoDQHAHaEV&w=300&h=175&c=7&o=5&pid=1.7" %> </tr> 
+          <tr> <%= image_tag "https://www.bing.com/th?id=OIP.f0WyBcM5RDWOil_DbnvAQQHaFj&w=243&h=182&c=7&o=5&pid=1.7"%> </tr> 
+        </td>
         <td><%= link_to 'Show', pizza %></td>
         <td><%= link_to 'Edit', edit_pizza_path(pizza) %></td>
         <td><%= link_to 'Destroy', pizza, method: :delete, data: { confirm: 'Are you sure?' } %></td>
