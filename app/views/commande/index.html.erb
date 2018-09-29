@@ -5,15 +5,15 @@
 <table>
   <thead>
       <tr>
-       <td>Name</td>
-       <td>price</td>
-       <td>Url</td>>
-      <td colspan="3"></td>
+       <td>Noms</td>
+       <td>Adresse</td>
+       <td>pizzas</td>>
+      <td colspan="6"></td>
       </tr>
   </thead>
-
+  
   <tbody>
-    <% @pizzas.each do |pizza| %>
+      <% @pizzas.each do |pizza| %>
       <tr>
         <td><%= pizza.name %></td>
         <td><%= pizza.price %></td>
@@ -22,10 +22,8 @@
         <td><%= link_to 'Edit', edit_pizza_path(pizza) %></td>
         <td><%= link_to 'Destroy', pizza, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
-    <% end %>
+    <% end %> 
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Pizza', new_pizza_path %>
