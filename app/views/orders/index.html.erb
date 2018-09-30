@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>COMMANDES</h1>
+
+<table>
+  <thead>
+      <tr>
+       <td>Name</td>
+       <td>adress</td>
+       <td>pizza</td>>
+      <td colspan="3"></td>
+      </tr>
+  </thead>
+
+  <tbody>
+    <% @pizzas.each do |pizza| %>
+      <tr>
+        <td><%= pizza.name %></td>
+        <td><%= pizza.adress %></td>
+        <td> <img src="<%= pizza.url%>"/> </td>
+        <td><%= link_to 'Show', pizza %></td>
+        <td><%= link_to 'Edit', edit_pizza_path(pizza) %></td>
+        <td><%= link_to 'Destroy', pizza, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>

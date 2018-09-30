@@ -1,2 +1,0 @@
-class TestjsonController < ApplicationController
-end
