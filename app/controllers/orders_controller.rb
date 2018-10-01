@@ -1,8 +1,7 @@
 class OrdersController < ApplicationController
-  
   skip_before_action :verify_authenticity_token, :only => [:create_order]
   
-  def create 
+  def create_order 
     p "ordersController"
     @nom = params[:name]
     @adresse = params[:address]
@@ -27,7 +26,7 @@ class OrdersController < ApplicationController
     end
     @erros = @erros + "]"
   end
-  def index
+  def commande
     @orders= []
     @allOrders = Order.all
     @allOrders.each do |order|
@@ -43,5 +42,3 @@ class OrdersController < ApplicationController
     end
   end
 end
-end
-
