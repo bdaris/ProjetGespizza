@@ -1,7 +1,6 @@
 class OrdersController < ApplicationController
-  resources :orders, :only => [:index]
   
-  skip_before_action :verify_authenticity_token, :only => [:create]
+  skip_before_action :verify_authenticity_token, :only => [:create_order]
   
   def create 
     p "ordersController"
