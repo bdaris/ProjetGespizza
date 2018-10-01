@@ -7,20 +7,17 @@
       <tr>
        <td>Noms</td>
        <td>Adresse</td>
-       <td>pizzas</td>>
+       <td>Url</td>>
       <td colspan="6"></td>
       </tr>
   </thead>
   
   <tbody>
-      <% @pizzas.each do |pizza| %>
+      <% @orders.each do |order| %>
       <tr>
-        <td><%= pizza.name %></td>
-        <td><%= pizza.price %></td>
-        <td> <%= pizza.url%> </td>
-        <td><%= link_to 'Show', pizza %></td>
-        <td><%= link_to 'Edit', edit_pizza_path(pizza) %></td>
-        <td><%= link_to 'Destroy', pizza, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= order.Noms %></td>
+        <td><%= order.Adresse %></td>
+        <td> <%= order.Url%> </td>
       </tr>
     <% end %> 
   </tbody>
